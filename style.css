@@ -17,6 +17,10 @@ body{
     background-color: #201f1f;
 }
 
+img{
+    width: 100%;
+}
+
 button{
     cursor: pointer;
     border: none;
@@ -30,6 +34,10 @@ header{
     gap: 1rem;
     font-size: 2rem;
     height: 20%;
+}
+
+header img{
+    width: 4.6rem;
 }
 
 header .special{
@@ -63,4 +71,44 @@ main form button{
     height: 4.8rem;
     border-radius: .5rem;
     background-color: #b15db1;
+}
+
+main ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: calc(40% + 5.8rem);
+    margin: 5rem auto;
+    list-style: none;
+}
+
+main li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #131212;
+}
+
+main li button{
+    width: 3rem;
+    background-color: transparent;
+}
+
+main li div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main li div input{
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+main li div h3{
+    font-size: 1.6rem;
+    font-weight: normal;
 }
