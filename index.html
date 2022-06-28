@@ -17,18 +17,19 @@
     </header>
     <main>
         <form action="">
-            <input type="text" name="assignment" id="assignment" placeholder="Nome da tarefa">
-            <button aria-label="Adicionar tarefa"><img src="assets/icons/add-box.svg" alt="Ícone de adição"></button>
+            <input type="text" placeholder="Nome da tarefa" autocomplete="off">
+            <button onclick="addTask()" aria-label="Adicionar tarefa"><img src="assets/icons/add-box.svg" alt="Ícone de adição"></button>
         </form>
         <ul>
             <li>
                 <div>
-                    <input type="checkbox" name="highlighter" id="highlighter" aria-label="Concluir tarefa">
+                    <input type="checkbox" aria-label="Concluir tarefa">
                     <h3>Título da tarefa</h3>
                 </div>
-                <button aria-label="Excluir tarefa"><img src="assets/icons/trash-can.svg" alt="Ícone de lixeira"></button>
+                <button onclick="taskDelete(0)" aria-label="Excluir tarefa"><img src="assets/icons/trash-can.svg" alt="Ícone de lixeira"></button>
             </li>
         </ul>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
